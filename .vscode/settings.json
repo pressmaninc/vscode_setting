@@ -1,0 +1,32 @@
+{
+    "genieai.promptPrefix.addComments": "このコードに日本語のコメントを追加してください。",
+    "genieai.promptPrefix.addTests": "このコードのテストを実装してください。",
+    "genieai.promptPrefix.explain": "このコードを日本語で説明をしてください。",
+    "genieai.promptPrefix.completeCode": "このコードを完成させてください。",
+    "genieai.promptPrefix.findProblems": "このコードのバグを見つけてください。",
+    "genieai.promptPrefix.optimize": "このコードを最適化してください。",
+    "[php]": {
+        "editor.detectIndentation": true,
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "files.eol": "\n",
+        "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+    },
+    "phpcs.executablePath": "./vendor/bin/phpcs",
+    "phpcs.enable": true,
+    "phpcs.standard": "WordPress-Extra",
+    "phpcs.autoConfigSearch": false,
+    "phpcs.showSources": true,
+    "phpcbf.enable": true,
+    "phpcbf.debug": true,
+    "phpcbf.standard": "WordPress-Extra",
+    "phpcbf.executablePath": "./vendor/bin/phpcbf",
+    "phpcbf.onsave": false,
+    "phpcbf.documentFormattingProvider": true,
+    "php-docblocker.alignParams": true,
+    "php-docblocker.alignReturn": true,
+    "php-docblocker.author": {
+        "name": "Name",
+        "email": "email@email.com"
+    }
+}

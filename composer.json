@@ -1,0 +1,43 @@
+{
+  "name": "pressmaninc/vscode_setting",
+  "autoload": {
+    "psr-4": {
+      "Pressmaninc\\VscodeSetting\\": ""
+    }
+  },
+  "authors": [
+    {
+      "name": "Katsunori Takahashi",
+      "email": "katsunori_takahashi@pressman.ne.jp"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/WordPress/WordPress-Coding-Standards"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "dev-develop",
+    "phpcompatibility/php-compatibility": "^9.0",
+    "phpcsstandards/phpcsutils": "^1.0.5",
+    "php-parallel-lint/php-parallel-lint": "^1.3.2",
+    "php-parallel-lint/php-console-highlighter": "^1.0.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/phpcs --config-set default_standard WordPress-Extra",
+      "vendor/bin/phpcbf --config-set default_standard WordPress-Extra"
+    ],
+    "post-update-cmd": [
+      "vendor/bin/phpcs --config-set default_standard WordPress-Extra",
+      "vendor/bin/phpcbf --config-set default_standard WordPress-Extra"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
